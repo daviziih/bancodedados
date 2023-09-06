@@ -2,15 +2,15 @@ declare
  
     NUMERO NUMBER(2); 
  
-	DISTANCIA_KM NUMBER(3); 
+	DISTANCIA_KM NUMBER(3,2); 
 	TEMPO_SEGUNDOS NUMBER(2); 
 	VELOCIDADE NUMBER(3); 
  
-	RAIO NUMBER(2); 
+	RAIO NUMBER(6,2); 
  
-	VOLUME_ESFERA NUMBER(10); 
-	VOLUME_CILINDRO NUMBER(10); 
-	VOLUME_CAIXA NUMBER(10); 
+	VOLUME_ESFERA NUMBER(10,2); 
+	VOLUME_CILINDRO NUMBER(10,2); 
+	VOLUME_CAIXA NUMBER(10,2); 
          
 	ALTURA NUMBER(3,2); 
 	COMPRIMENTO NUMBER(2); 
@@ -64,9 +64,8 @@ begin
 	MULTIPLICADO := NUMERO * 3.25; 
 	MULTIPLICADO1 := NUMERO * -1.36; 
          
-	dbms_output.put_line('Numero: ' || NUMERO); 
-    dbms_output.put_line('Antecessor: ' || ANTECESSOR); 
-    dbms_output.put_line('Sucessor: ' || SUCESSOR); 
+    dbms_output.put_line('Numero: ' || NUMERO); 
+  
     dbms_output.put_line('Multiplicado: ' || MULTIPLICADO); 
     dbms_output.put_line('Multiplicado por Negativo: ' || MULTIPLICADO1); 
     dbms_output.put_line(' '); 
